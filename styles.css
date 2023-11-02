@@ -1,0 +1,149 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-attachment: fixed;
+    /* Add your background image */
+    background-image: url('https://engage.sinch.com/sites/default/files/styles/small_hq/public/image/2023-04/Hero%20Illustration%20-%20Chatbots%20-%20SE%20-%20Website%20-%201000x850%20-%2001.png?itok=Me3rdWtS');
+    background-color: azure;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.chatbot-toggler {
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #0074d9;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+.chat-container {
+    display: none;
+    width:320px;
+    position: fixed;
+    bottom: 95px;
+    right: 50px;
+    max-width: 500px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.show-chat-container {
+    display: block;
+}
+
+.chat-header {
+    background-color: #0074d9;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.chat-log {
+    height: 300px;
+    overflow-y: auto;
+    margin:10px 0 10px 0;
+}
+
+.chat-message {
+    padding: 10px;
+    margin: 5px;
+    font-size: 14px;
+    display: block;
+}
+
+.user-message {
+    width: 70%;
+    position: relative;
+    right: -25%;
+    word-wrap: break-word;
+    text-align: right;
+    background-color: #0074d9;
+    color: #fff;
+    border-radius: 5px 5px 0 5px;
+}
+
+.bot-message {
+    max-width: 70%;
+    display: inline-block;
+    text-align: left;
+    word-wrap: break-word;
+    background-color: #dddddd8e;
+    border-radius: 5px 5px 5px 0;
+}
+
+.botimg{
+    background-color: #0074d9;
+    position: relative;
+    bottom: -10px;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    padding: 5px;
+}
+
+.chat-input{
+    display: flex;
+    border-top: 1px solid#ddd;
+    padding-top: 5px;
+}
+
+#user-input {
+    width: 100%;
+    border:none;
+    outline: none;
+}
+
+#send-button {
+    color: #0074d9;
+    border: none;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    color: #0056a6;
+}
+
+/* Default styles for chatbot container */
+.chat-container {
+    width: 320px;
+    /* Other styling properties */
+}
+
+/* Media query for smaller screens (e.g., smartphones) */
+@media (max-width: 768px) {
+    .chat-container {
+        width: 90%; /* Adjust the width for smaller screens */
+        /* Additional styling for smaller screens */
+    }
+}
+
+/* Media query for tablets and larger screens */
+@media (min-width: 768px) {
+    .chat-container {
+        width: 50%; /* Adjust the width for tablets and larger screens */
+        /* Additional styling for tablets and larger screens */
+    }
+}

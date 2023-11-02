@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+</head>
+<body>
+    <button class="chatbot-toggler" id="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+    </button>
+    <div class="chat-container" id="chat-container">
+        <div class="chat-header">Chatbot</div>
+        <div class="chat-log" id="chat-log">
+            <!-- Chat messages will appear here -->
+        </div>
+        
+        <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <span id="send-button" class="material-symbols-rounded">send</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
